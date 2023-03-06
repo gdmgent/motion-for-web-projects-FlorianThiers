@@ -1,0 +1,71 @@
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 90vh;
+
+}
+
+h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: transparent;
+    background-color: blue;
+    background: transparent linear-gradient(104deg);
+    -webkit-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+
+}
+
+.circle {
+    width: 40vh;
+    height: 40vh;
+    background-color: aqua;
+    border-radius: 50%;
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-direction: alternate;
+    overflow: none;
+
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.1);
+        top: 0;
+        left: 0;
+    }
+    50% {
+        transform: scale(0.5);
+        top: 80vh;
+        left: 45vh;
+        filter: blur(200px);
+    }
+    100% {
+        transform: scale(0.1);
+        top: 0;
+        left: 90vh;
+    }
+}
+
+.sq {
+    width: 30vh;
+    height: 30vh;
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+    transition: transform 300ms ease-in-out;
+    display: flex;
+}
+
+.sq:hover {
+    transform: perspective(1000px) rotateY(50deg) skew(10deg, 10deg);
+}
