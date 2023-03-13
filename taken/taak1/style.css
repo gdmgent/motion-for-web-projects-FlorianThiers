@@ -86,24 +86,11 @@ section h2 {
     max-width: 12rem;
   }
   
-section ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-  }
-  
-section li {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  }
-  
-section li:last-child {
-    border-bottom: none;
+section .cards {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
   
 section h3 {
@@ -117,40 +104,38 @@ section p {
     font-weight: bold;
   }
 
-  
-  .card-container {
-    position: relative;
-    width: calc(33.33% - 20px);
-    margin-bottom: 20px;
-  }
+
 
   .card {
     text-align: center;
     position: relative;
-    bottom: 0;
+    aspect-ratio: 1;
     transform-style: preserve-3d;
     transition: transform 0.5s ease-in-out;
   }
 
   .card img {
-    width: 12rem;
-    height: 12rem;
+    width: 100%;
+    
     display: block;
     object-fit: cover;
-    border-radius: 10%;
   }
   
   .front,
   .back {
+    text-align: center;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    transform-origin: center;
+
   }
   
-  .front {
-    z-index: 2;
-  }
   
   .back {
     transform: rotateY(180deg);
@@ -158,7 +143,6 @@ section p {
   
   .card:hover {
     transform: rotateY(180deg);
-    transform-origin: center;
   }
 
 /************/
