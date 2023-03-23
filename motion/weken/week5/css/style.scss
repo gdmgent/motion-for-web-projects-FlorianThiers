@@ -1,0 +1,39 @@
+header{
+    nav{
+        background-color: greenyellow;
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                a{
+                    color: purple;
+                    padding: 5px 10px;
+                }
+                &:hover{
+                    background-color: green;
+                }
+            }
+        }
+    }
+}
+
+$colors:
+    "prim"  hsl(300, 100%, 25%),
+    "sec"   hsl(84, 100%, 59%),
+    "ter"   hsl(120, 100%, 25%);
+
+@each $name, $color in $colors{
+    h1.#{$name}{
+        color: $color;
+    }
+    a.btn.#{$name}{
+        background-color: $color;
+        display: inline-block;
+        padding: 1rem;
+        text-decoration: none;
+        color: white;
+        &:hover{
+            background-color: darken($color, 20%);
+        }
+    }
+}

@@ -1,0 +1,61 @@
+header nav {
+  background-color: greenyellow;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  color: purple;
+  padding: 5px 10px;
+}
+header nav ul li:hover {
+  background-color: green;
+}
+
+h1.prim {
+  color: hsl(300, 100%, 25%);
+}
+
+a.btn.prim {
+  background-color: hsl(300, 100%, 25%);
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+a.btn.prim:hover {
+  background-color: #1a001a;
+}
+
+h1.sec {
+  color: hsl(84, 100%, 59%);
+}
+
+a.btn.sec {
+  background-color: hsl(84, 100%, 59%);
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+a.btn.sec:hover {
+  background-color: #77c700;
+}
+
+h1.ter {
+  color: hsl(120, 100%, 25%);
+}
+
+a.btn.ter {
+  background-color: hsl(120, 100%, 25%);
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+a.btn.ter:hover {
+  background-color: #001a00;
+}/*# sourceMappingURL=style.css.map */
