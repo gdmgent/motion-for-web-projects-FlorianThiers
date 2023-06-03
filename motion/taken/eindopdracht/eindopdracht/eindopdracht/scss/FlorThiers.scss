@@ -1,0 +1,180 @@
+#FlorThiers {
+    h1, p{
+        text-align: center;
+        font-size: large;    
+    }
+    .box {
+        visibility: visible;
+    }
+    
+
+    section#FlorThiers {
+        h1, p{
+            text-align: center;
+
+        }
+        .box {
+            visibility: visible;
+        }
+        
+    }
+
+    #Pyramid {
+        h1, p{
+            text-align: center;
+            color: black;
+            padding: 5rem;
+            font-size: 300%; 
+        
+        }
+        .box {
+            visibility: visible;
+        }
+        img {
+            height: 90vh;
+        }
+    }
+    
+    #GreatPyramid {
+        h1, p{
+            text-align: center;
+            color: black;
+            padding-top: 10rem;      
+            font-size: xx-large;   
+        }
+        #piramide{
+            margin-right: -200px;
+            height: 100vh;
+        }
+        #lat{
+           height: 100vh;
+           
+        }
+    }
+    
+    #GreatPyramid {
+        h1, p{
+            text-align: center;    
+            font-size: xx-large; 
+        }
+        .box {
+            visibility: visible;
+        }
+        
+    }
+    
+    #SevenWonders {
+        h1, p{
+            text-align: center;   
+            font-size: xx-large;  
+        }
+        img{
+            position: relative;
+            right: -10vw;
+        };
+        
+    }
+    
+    #Cholula {
+        h1, p{
+            text-align: center; 
+            font-size: xx-large;    
+        }
+        img{
+            position: relative;
+        }
+        
+    }
+    
+    #measures {
+        h1, p{
+            text-align: center;  
+            font-size: xx-large;   
+
+        }
+        img{
+            height: 80vh;
+        }
+        
+    }
+    
+    #largestPreColumbian {
+        h1, p {
+            text-align: center;
+            font-size: xx-large; 
+        }
+    }
+    
+    #Aztecs {
+        h1, p{
+            text-align: center;
+            color: white;
+            padding-bottom: 10rem;    
+        }
+        
+    }
+    
+    #GunungPadang {
+        h1, p{
+            text-align: center;
+            color: white;
+            padding-bottom: 10rem;  
+            font-size: xx-large;       
+        }
+        img{
+            height: 480px;
+            margin-top: -50px;
+        }
+    }
+    
+    #laserPulses {
+        h1, p{
+            text-align: center;
+            color: white;    
+            font-size: xx-large; 
+        }
+        #vliegtuig{
+
+            position: relative;
+        }
+        #drone{
+            position: relative;
+            height: 10rem;
+            width: 10rem;
+        }
+        
+    }
+    
+    #LIDAR {
+        h1, p{
+            text-align: center;
+            color: white;
+            padding-bottom: 10rem;
+            font-size: xx-large;       
+        }
+        img{
+            
+            padding-bottom: 10rem;
+            padding-top: 10rem;
+            padding-left: 33%;
+        }
+    
+    }
+    
+    .horizontaal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 5rem;
+    }
+    
+    #follow{
+        position: fixed;
+        z-index: 10;
+    }
+    
+    #PiOog{
+        height: 5rem;
+    }
+}
